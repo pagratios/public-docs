@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy policy for ReBloom, an independent Android companion app for xBloom Studio.">
+  <title>Privacy Policy | ReBloom</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.6; }
+    body { max-width: 48rem; margin: 0 auto; padding: 1.5rem; }
+    h1, h2 { line-height: 1.25; }
+    h2 { margin-top: 2rem; }
+    a { overflow-wrap: anywhere; }
+    footer { margin-top: 3rem; border-top: 1px solid currentColor; padding-top: 1rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ReBloom Privacy Policy</h1>
+    <p><strong>Effective date:</strong> September 29, 2026</p>
+    <p>ReBloom is an independent Android companion app for xBloom Studio. It is not affiliated with or endorsed by xBloom. This policy explains what information ReBloom keeps on your device, when information is sent to optional services, and how you can control it.</p>
+
+    <h2>Information stored on your device</h2>
+    <ul>
+      <li><strong>Brew history:</strong> Completed brews and data used for history and graphs are stored locally in a SQLite database.</li>
+      <li><strong>Recipes and settings:</strong> Recipes and app preferences are stored locally in Android SharedPreferences.</li>
+      <li><strong>Optional account credentials:</strong> If you connect the Visualizer service, its email address and password are kept in encrypted Android storage for Basic Authentication. If you sign in to xBloom, your member ID and session token are kept in encrypted Android storage; ReBloom does not save your xBloom password.</li>
+    </ul>
+    <p>ReBloom's Demo mode keeps its data in memory only; Demo data is not saved as local brew history.</p>
+
+    <h2>Optional services and device features</h2>
+    <p>You can use ReBloom without connecting optional accounts. When you choose to use the following features, the information needed for the request is sent to the relevant service or device:</p>
+    <ul>
+      <li><strong>xBloom account:</strong> Signing in exchanges account information with xBloom and uses the resulting member ID and session token for authenticated requests. If you opt in to syncing or publishing your own recipes, those recipes are sent to xBloom; published recipes may be visible to others according to xBloom's service. Importing a public share link sends a request for that shared recipe. Product-code NFC lookup sends the product code for a lookup, not the card's UID or raw card data.</li>
+      <li><strong>Visualizer:</strong> If you connect Visualizer and choose to upload completed brews, ReBloom sends the relevant brew data, including TDS or extraction-yield (EY) values when available, using your Visualizer credentials.</li>
+      <li><strong>DiFluid R2:</strong> If you use this optional accessory, ReBloom communicates with it over Bluetooth to read measurements. On Android 11 and earlier, Android may require location permission to scan for Bluetooth devices; ReBloom uses that permission for Bluetooth scanning, not to collect your location.</li>
+      <li><strong>Diagnostics:</strong> Diagnostic information is shared only when you explicitly choose to share it. Review what you are sharing, as diagnostics may include app or device details relevant to troubleshooting.</li>
+    </ul>
+    <p>Requests to xBloom and Visualizer may also expose ordinary connection metadata, such as your IP address and request time, to those services. Their handling of information you send is governed by their own privacy policies. ReBloom does not control their storage, visibility, or deletion practices.</p>
+
+    <h2>Advertising and analytics</h2>
+    <p>ReBloom does not include advertising or analytics services. It does not sell your personal information.</p>
+
+    <h2>Retention and your choices</h2>
+    <p>Local brew history, recipes, and settings remain on your device until you uninstall ReBloom or clear its app data. Disconnecting an account clears its locally stored credentials or session information. You can decline optional account connections, recipe sync and publication, brew uploads, Bluetooth access, and diagnostic sharing. Uninstalling the app clears its local brew history, but does not remove information already sent to xBloom, Visualizer, or another recipient; contact the relevant service about information it retains. Published recipes may remain available under that service's rules.</p>
+
+    <h2>Children's privacy</h2>
+    <p>ReBloom is not directed to children. If you believe a child has shared personal information through ReBloom, contact us using the address below.</p>
+
+    <h2>Changes and contact</h2>
+    <p>We may update this policy as ReBloom changes. Updates will be posted on this page with a revised effective date. For privacy questions or requests concerning ReBloom, email <a href="mailto:reblooomapp@gmail.com">reblooomapp@gmail.com</a>. For information held by an optional third-party service, contact that service directly.</p>
+  </main>
+  <footer>ReBloom is an independent app and is not affiliated with xBloom.</footer>
+</body>
+</html>
