@@ -17,7 +17,7 @@
 <body>
   <main>
     <h1>ReBloom Privacy Policy</h1>
-    <p><strong>Effective date:</strong> September 29, 2026</p>
+    <p><strong>Effective date:</strong> October 3, 2026</p>
     <p>ReBloom is an independent Android companion app for xBloom Studio. It is not affiliated with or endorsed by xBloom. This policy explains what information ReBloom keeps on your device, when information is sent to optional services, and how you can control it.</p>
 
     <h2>Information stored on your device</h2>
@@ -25,7 +25,8 @@
       <li><strong>Brew history:</strong> Completed brews and data used for history and graphs are stored locally in a SQLite database.</li>
       <li><strong>Recipes and settings:</strong> Recipes and app preferences are stored locally in Android SharedPreferences.</li>
       <li><strong>Optional account credentials:</strong> If you connect the Visualizer service, its email address and password are kept in encrypted Android storage for Basic Authentication. If you sign in to xBloom, your member ID and session token are kept in encrypted Android storage; ReBloom does not save your xBloom password.</li>
-    </ul>
+            <li><strong>Crash report and usage statistics choice:</strong> Your choice to share or not share crash reports and usage statistics is stored locally on your device.</li>
+          </ul>
     <p>ReBloom's Demo mode keeps its data in memory only; Demo data is not saved as local brew history.</p>
 
     <h2>Optional services and device features</h2>
@@ -34,15 +35,31 @@
       <li><strong>xBloom account:</strong> Signing in exchanges account information with xBloom and uses the resulting member ID and session token for authenticated requests. If you opt in to syncing or publishing your own recipes, those recipes are sent to xBloom; published recipes may be visible to others according to xBloom's service. Importing a public share link sends a request for that shared recipe. Product-code NFC lookup sends the product code for a lookup, not the card's UID or raw card data.</li>
       <li><strong>Visualizer:</strong> If you connect Visualizer and choose to upload completed brews, ReBloom sends the relevant brew data, including TDS or extraction-yield (EY) values when available, using your Visualizer credentials.</li>
       <li><strong>DiFluid R2:</strong> If you use this optional accessory, ReBloom communicates with it over Bluetooth to read measurements. On Android 11 and earlier, Android may require location permission to scan for Bluetooth devices; ReBloom uses that permission for Bluetooth scanning, not to collect your location.</li>
+      <li><strong>Backup and restore:</strong> In Settings &rarr; Backup and restore, you can export the parts you choose (recipes with their sources and card matches, favorites, brew history including measurement samples, and xBloom sync exclusions) to a JSON file at a location you pick with Android's file picker, such as phone storage or Google Drive, and restore chosen parts from such a file. ReBloom does not upload backups anywhere itself; the file is stored wherever you save it and is governed by that storage provider. Backups never contain account credentials, session tokens, or your crash report and usage statistics choice. Restoring a backup never contacts the machine.</li>
       <li><strong>Diagnostics:</strong> Diagnostic information is shared only when you explicitly choose to share it. Review what you are sharing, as diagnostics may include app or device details relevant to troubleshooting.</li>
     </ul>
     <p>Requests to xBloom and Visualizer may also expose ordinary connection metadata, such as your IP address and request time, to those services. Their handling of information you send is governed by their own privacy policies. ReBloom does not control their storage, visibility, or deletion practices.</p>
 
-    <h2>Advertising and analytics</h2>
-    <p>ReBloom does not include advertising or analytics services. It does not sell your personal information.</p>
+    <h2>Crash reports and usage statistics (optional)</h2>
+    <p>ReBloom can send crash reports and usage statistics to help improve the app. Both are <strong>off by default</strong>. ReBloom asks once on the Home screen (Not now, Choose, or Share), and you can turn each one on or off separately at any time in Settings &rarr; Crash reports and usage.</p>
+    <p>If you turn them on, this information is sent to Google Firebase (Firebase Crashlytics and Google Analytics for Firebase), which is operated by Google. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a>.</p>
+    <ul>
+      <li><strong>Crash reports:</strong> the type of error; the location in the app's code where it happened (stack trace); the first line of the error message, after ReBloom removes on the device any quoted text (such as recipe and account names), email addresses, links, IDs and serial numbers, and long numbers; the app version; and the xBloom Studio firmware version.</li>
+      <li><strong>Usage statistics:</strong> which screens are opened and counts of feature use, such as connecting a machine, loading a recipe and where it came from (for example starter, own, shared, or NFC), brewing, manual grind, pour, and scale use, NFC card reads, recipe imports, backup export and restore, Visualizer uploads, DiFluid R2 measurements, and entering Demo mode. These events contain only fixed category values or numbers.</li>
+      <li><strong>Collected by Firebase:</strong> Firebase also records the Android version, device model, approximate country (derived from your IP address; Google Analytics does not store IP addresses), and a random app-installation identifier.</li>
+    </ul>
+    <p>ReBloom never sends recipe names or contents, notes, brew data, account details or credentials, machine serial numbers, raw Bluetooth data, a user ID, or the advertising ID (ReBloom removes the advertising-ID permission). This information is not used for advertising; Google signals and ad personalization are turned off. Nothing is sent in Demo mode or in development builds.</p>
+    <p>ReBloom does not include advertising. It does not sell your personal information.</p>
 
     <h2>Retention and your choices</h2>
-    <p>Local brew history, recipes, and settings remain on your device until you uninstall ReBloom or clear its app data. Disconnecting an account clears its locally stored credentials or session information. You can decline optional account connections, recipe sync and publication, brew uploads, Bluetooth access, and diagnostic sharing. Uninstalling the app clears its local brew history, but does not remove information already sent to xBloom, Visualizer, or another recipient; contact the relevant service about information it retains. Published recipes may remain available under that service's rules.</p>
+    <p>Local brew history, recipes, and settings remain on your device until you uninstall ReBloom or clear its app data. Disconnecting an account clears its locally stored credentials or session information. You can decline optional account connections, recipe sync and publication, brew uploads, Bluetooth access, and diagnostic sharing. Uninstalling the app clears its local brew history, but does not remove information already sent to xBloom, Visualizer, or another recipient; contact the relevant service about information it retains. Published recipes may remain available under that service's rules. Backup files you export are not removed by uninstalling ReBloom; delete them from the location where you saved them.</p>
+    <p>Crash reports and usage statistics are optional and off unless you turn them on. Google Analytics event data is retained for 2 months, and Firebase Crashlytics crash data is retained for 90 days. Turning crash reports off deletes reports that have not yet been sent. Turning usage statistics off stops collection and resets the analytics data and identifier on your device. Data already sent cannot be deleted from within the app; to make a request about it, contact us using the address below.</p>
+
+    <h2>Legal basis and your rights</h2>
+    <p><strong>Data controller:</strong> The data controller is the ReBloom developer, who can be contacted at <a href="mailto:reblooomapp@gmail.com">reblooomapp@gmail.com</a>.</p>
+    <p><strong>Legal basis:</strong> Crash reports and usage statistics are processed on the basis of your consent. You can withdraw consent at any time in Settings &rarr; Crash reports and usage; withdrawal does not affect processing that took place before. Optional account features (xBloom sign-in, recipe sync and publication, Visualizer uploads, share-link imports, and NFC catalogue lookup) are processed to perform the request you make. Data kept only on your device is not sent to the developer.</p>
+    <p><strong>Your rights:</strong> If you are in the EU, EEA, or UK, you have the right to access, rectification, erasure, restriction of processing, objection, data portability, and withdrawal of consent, and the right to lodge a complaint with a data protection supervisory authority, for example in your country of residence. The developer does not receive your recipes, brew history, or account data. Crash reports and usage statistics are pseudonymous and contain no user ID, so the developer may be unable to identify a specific person's data; turning the switches off and the retention periods above are the main controls. You can send requests to the contact address above.</p>
+    <p><strong>International transfers:</strong> Google Firebase may process data outside the EEA under Google's safeguards, such as Standard Contractual Clauses.</p>
 
     <h2>Children's privacy</h2>
     <p>ReBloom is not directed to children. If you believe a child has shared personal information through ReBloom, contact us using the address below.</p>
